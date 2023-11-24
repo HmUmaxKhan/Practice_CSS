@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --black: #2f2f2f;
+   --white: #fff;
+   --red : #f83038;
+}
+
+.main{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(#1c1c1c,#323232);
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main::before{
+    content: 'Adventure';
+    color: rgba(255, 255, 255, 0.05);
+    font-size: 16vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+}
+
+header{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+}
+.navigation{
+   display: flex;    
+}
+.navigation li{
+   list-style: none;
+}
+
+.navigation li a{
+    text-decoration: none;
+    position: relative;
+    padding: 40px;
+    color: var(--white);
+}
