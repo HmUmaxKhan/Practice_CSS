@@ -55,6 +55,41 @@ header{
 .navigation li a{
     text-decoration: none;
     position: relative;
-    padding: 40px;
     color: var(--white);
+    margin-left: 40px;
+    padding: 10px;
+    transition: 0.25s;
+}
+
+.navigation li a:hover{
+    border-radius: 30px;
+    background: var(--red);
+    box-shadow: 0 0 7px 5px var(--white);
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h2{
+    font-size: 5rem;
+    color: var(--white);
+}
+.hero .btn{
+    text-decoration: none;
+    padding: 16px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    background: var(--red);
+    color: var(--white);
+    transition: 0.5s;
+}
+.hero .btn:hover{  
+    box-shadow: 0 0 7px 5px var(--white);
 }
